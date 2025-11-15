@@ -76,3 +76,13 @@ def main(
 
 if __name__ == "__main__":
     main()
+
+
+# This allows us to use this function only when it is the file is
+#  loaded correctly directly from the command line.
+# Not when it is imported as a module in another script.
+# It also allows us to have a replicable module for other projects.
+
+# Click allows us to execute the script from the command line,
+#  providing the necessary options to download the dataset.
+# It transforms main() into a command line interface.
