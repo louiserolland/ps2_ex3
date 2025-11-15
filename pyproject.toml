@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ps2-nba-database"
+version = "0.1.0"
+description = "NBA database analysis for PS2 Ex3"
+authors = [
+  { name = "Louise Rolland" }
+]
+requires-python = ">=3.11"
+dependencies = [
+  "pandas",
+  "numpy",
+  "sqlalchemy",
+  "matplotlib",
+  "seaborn",
+  "click"
+]
+
+[tool.setuptools]
+packages = ["nba"]
